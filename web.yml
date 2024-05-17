@@ -6,12 +6,12 @@
   vars:
     build: 11
     
-   tasks:
+    tasks:
 #    - name: Update apt and install docker
 #      apt:
-#       name: docker
-#       state: latest
-#       update_cache: true
+#        name: docker
+#        state: latest
+#        update_cache: true
         
     - name: Delete running containers
       shell: docker rm -f $(docker ps --all --quiet)
