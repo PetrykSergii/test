@@ -3,7 +3,7 @@
   hosts: Azure
   become: True
   vars:
-    build: 11
+    build: $BUILD_NUMBER
     
    tasks:
 #    - name: Update apt and install docker
