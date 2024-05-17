@@ -1,6 +1,7 @@
 ---
 - name: Configure WebServers with Docker
   hosts: Azure
+  gather_facts: false
   become: True
   vars:
     build: 11
