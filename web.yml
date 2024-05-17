@@ -20,7 +20,7 @@
       
 
     - name: Pull Docker image
-      command: docker pull pasterclan/pipeline:v{{ build }}
+      command: docker pull pasterclan/pipeline:{{ build }}
 
     - name: Run Docker image
-      command: docker run -d -p 8080:80 pasterclan/pipeline:v{{ build }}
+      command: docker run -d -p 8080:80 pasterclan/pipeline:{{ build }}
